@@ -1,3 +1,10 @@
+/*
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-10-10 19:58:00
+ * @LastEditTime: 2019-10-10 19:58:00
+ * @LastEditors: your name
+ */
 'use strict';
 
 const path = require('path');
@@ -72,7 +79,13 @@ module.exports = {
   appBuild: resolveApp('build'),
   appPublic: resolveApp('public'),
   appHtml: resolveApp('public/index.html'),
-  appIndexJs: resolveModule(resolveApp, 'src/index'),
+  appQueryHtml: resolveApp('public/query/index.html'),
+  appTicketHtml: resolveApp('public/ticket/index.html'),
+  appOrderHtml: resolveApp('public/order/index.html'),
+  appIndexJs: resolveModule(resolveApp, 'src/index/index'),
+  appQueryJs: resolveModule(resolveApp, 'src/query/index'),
+  appTicketJs: resolveModule(resolveApp, 'src/ticket/index'),
+  appOrderJs: resolveModule(resolveApp, 'src/order/index'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   appTsConfig: resolveApp('tsconfig.json'),
